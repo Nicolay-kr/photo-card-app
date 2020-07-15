@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box; 
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;       
+}
+.hidden{
+    visibility: hidden;
+}
+.content{
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    height: auto;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+.content > section{
+    margin:20px 0px;
+}
+.content-title{
+    width: 100%; 
+}
+.content-title h1{
+    font-size: 50px;
+    opacity: 0.7;
+}
+.content-description{
+    width: 100%;
+    display: none;
+}
+ul{
+    padding-left: 30px;
+}
+.content-description p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.content-description li{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.content-body{
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    width:600px;
+    height: 700px;
+    box-shadow: 0px 10px 10px -9px gray;
+    border: 1px solid lightgray;
+}
+.card{
+    display:flex;
+    vertical-align: bottom;
+    max-width: 600px;
+    height: 100%;
+    flex-wrap: wrap;  
+}
+
+.card-image{
+    width: 100%;
+    
+}
+
+.card-image img{
+    width: 600px;
+    height: 400px;   
+}
+
+.card-label{
+    margin-left: 20px;
+    max-width: 600px;
+    margin-top:30px;
+}
+
+.user{
+    display: flex;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.user-avatar{
+    width: 50px;
+    height:50px;
+    padding-left: 0px;
+  
+}
+
+.user-name{
+    padding-left: 20px;
+}
+
+.user-name h3{
+    font-size: 24px;
+}
+
+.info{
+    margin:40px 0;
+}
+
+.date{
+    font-style: italic;
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    margin-top: auto;
+  }
+
+.edit-button{
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:#3273dc;
+}
+
+.card-form{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    flex-wrap: wrap;
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label{
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input,
+textarea{
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 10px 5px;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+} 
+
+.save-button,.cancel-button{
+    width: 50%;
+    padding: 15px;
+    background-color: white;
+    color:#3273dc;
+    cursor: pointer;
+    text-align: center;
+}
+
+.save-button{
+    border-right: 1px solid lightgray; ;
+}
+
+.save-button:hover,.cancel-button:hover,
+.edit-button:hover{
+    color:black
+}

@@ -1,14 +1,88 @@
-<html>
-
+<!DOCTIPE html>
+<html lang = 'ru'>
 <head>
   <title>Photo Card App</title>
   <script src="main.js"></script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-whidth, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
-
-
+  <main class="site-main">
+    <article class="content">
+      <section class="content-title">
+       <h1>Photo Card</h1>
+      </section>
+      <section class="content-description">
+        <p>Карточка любимой фотографии</p>
+          <ul>
+            <li>Можно изменить значение всех элементов карточки</li>
+            <li>Edit — включает режим редактирования</li>
+            <li>Save — сохраняет изменения</li>
+            <li>Cancel — отключает режим редактирования</li>
+          </ul>
+      </section>
+      <section class="content-body">
+        <div class="card">
+          <div class="card-image">
+            <img class="image" src="mozir-pripyat.jpg" alt="mozir-pripyat">
+          </div>
+          <div class="card-label">
+            <div class="user">
+              <img class="user-avatar" src="avatar.png" alt="avatar.png">
+              <div class="user-name">
+                <h3 class="name">Alex Hudenko</h3>
+                <p class="nick">@hoodoy</p>
+              </div>
+            </div>
+            <div class="info">
+              <p class="description">Вид с моста через Припять. Окрестности города Мозырь. Трасса P-31.Вид с моста через Припять. </p>
+              <a  class="location" href="https://yandex.by/maps/?ll=29.321631%2C52.025259&mode=whatshere&whatshere%5Bpoint%5D=29.321631%2C52.025259&whatshere%5Bzoom%5D=15&z=15">Посмотреть на карте</a>
+              <p class="date">20 Июля 2019</p>
+            </div>
+          </div>
+          <div class="button">
+            <a class="edit-button" href="#">Edit</a>
+          </div>
+        </div>
+        <div class="card-form hidden">
+          <form action="">
+            <div>
+              <label for="image">Image URL</label>
+              <input type="url" id="image" name="image"placeholder="image">
+            </div>
+            <div>
+              <label for="avatar">Avatar URL</label>
+              <input type="url" id="avatar" name="avatar"placeholder="avatar">
+            </div>
+            <div>
+              <label for="name">User name</label>
+              <input type="text" id="name" name="name"placeholder="name">
+            </div>
+            <div>
+              <label for="nick">Nickname</label>
+              <input type="text" id="nick" name="nick"placeholder="nick">
+            </div>
+            <div>
+              <label for="location">Location</label>
+              <input type="url" id="location" name="location"placeholder="location">
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input type="text" id="date" name="date"placeholder="date">
+            </div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="5" placeholder=""></textarea>
+          </form>
+          <div class="button">
+            <a href="#" class="save-button">Save</a>
+            <a href="#" class="cancel-button">Cancel</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
